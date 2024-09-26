@@ -1354,7 +1354,10 @@ section,
   overflow: hidden;
   margin-bottom: 50px;
 }
-
+.team .member .pic img{
+  height: 450px;
+  object-fit: cover;
+}
 .team .member .member-info {
   background-color: var(--surface-color);
   color: color-mix(in srgb, var(--default-color), transparent 20%);
@@ -1737,4 +1740,42 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.image-container {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0; /* Color inicial */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Transición del color */
+}
+
+.image-container img {
+  max-width: 60%;
+}
+
+.image-container:hover {
+  background-color: #ff6347; /* Cambia el color de fondo */
+}
+
+.image-containerreact {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0; /* Color inicial */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Transición del color */
+}
+
+.image-containerreact img {
+  max-width: 60%;
+}
+
+.image-containerreact:hover {
+  background-color: #444444; /* Cambia el color de fondo */
 }
