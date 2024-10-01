@@ -1779,3 +1779,22 @@ section,
 .image-containerreact:hover {
   background-color: #444444; /* Cambia el color de fondo */
 }
+
+.image-containervm {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0; /* Color inicial */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Transición del color */
+}
+
+.image-containervm img {
+  max-width: 60%;
+}
+
+.image-containervm:hover {
+  background-color: #1ab088; /* Cambia el color de fondo */
+}
