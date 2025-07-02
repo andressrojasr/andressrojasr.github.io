@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#163240] text-[#f7c9aa] font-sans">
+  <!-- Navbar -->
+  <nav class="bg-[var(--nav-bg)] border-b border-slate-600">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo / Brand -->
+      <div class="flex items-stretch  space-x-8">
+        <a href="index.html" class="text-lg font-medium border-r border-slate-600 px-8 flex">Andrés Rojas</a> 
+      </div>
+      <!-- Mode & Icons -->
+      <div class="flex items-center space-x-4">
+        <div class="flex space-x-6 items-center border-r px-8 border-slate-600 ">
+          <a href="index.html" class="hover:underline">Home</a>
+        </div>
+        <div class="flex space-x-6 items-center border-r px-8 border-slate-600 ">
+          <a href="about.html" class="underline">About me</a>
+        </div>
+        <div class="flex space-x-6 items-center border-r px-8 border-slate-600 ">
+          <a href="curriculum.html" class="hover:underline">Curriculum vitae</a>
+        </div>
+        <div class="flex space-x-6 items-center border-r px-8 border-slate-600 ">
+          <a href="contact.html" class="hover:underline">Contact & LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <section class="container mx-auto px-6 py-12">
+    <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+        <!-- Lado izquierdo: Imágenes de lenguajes de programación -->
+        <div class="flex-1 flex flex-col space-y-8">
+          <div class="flex flex-col items-center  space-y-6">
+            <!-- Imagen -->
+            <div class="bg-[var(--nav-bg)] border border-slate-600 rounded-lg overflow-hidden">
+              <img src="images/me.jpg" alt="Mi foto" class="w-80 h-80 object-cover" />
+            </div>
+          </div>
+          
+
+          <!-- Tecnologías -->
+          <div class="flex flex-col space-y-6">
+            <h2 class="text-2xl font-bold mb-4 text-center md:text-left">🛠️ Technologies & Tools</h2>
+            <div class="flex items-center justify-center flex-wrap gap-4 pt-8">
+              <img src="images/typescript.png" alt="Lenguaje 1" class="w-16 h-16 object-contain rounded transition-transform duration-300 ease-in-out hover:scale-125 hover:rotate-6 animate-float" />
+              <img src="images/javascript.png" alt="Lenguaje 2" class="w-16 h-16 object-contain rounded transition-transform duration-300 ease-in-out hover:scale-125 hover:-rotate-6 animate-float" />
+              <img src="images/python.png" alt="Lenguaje 3" class="w-16 h-16 object-contain rounded transition-transform duration-300 ease-in-out hover:scale-125 hover:rotate-6 animate-float" />
+              <img src="images/angular.png" alt="Lenguaje 4" class="w-16 h-16 object-contain rounded transition-transform duration-300 ease-in-out hover:scale-125 hover:-rotate-6 animate-float" />
+              <img src="images/react.png" alt="Lenguaje 5" class="w-16 h-16 object-contain rounded transition-transform duration-300 ease-in-out hover:scale-125 hover:rotate-6 animate-float" />
+              <img src="images/ionic.png" alt="Lenguaje 6" class="w-16 h-16 object-contain rounded transition-transform duration-300 ease-in-out hover:scale-125 hover:-rotate-6 animate-float" />
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Lado derecho: Información personal -->
+        <div class="flex-1 text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-4">About me</h2>
+        <p class="mb-2">
+            I'm a passionate Software Development student who loves learning new technologies and building projects. I especially enjoy working on the backend with Python, but I also have experience in frontend development using React, Angular, TypeScript, and Ionic.
+        </p>
+        <p class="mb-2">
+            My focus is on developing customized technology solutions that drive digital transformation, aligning myself with the mission to deliver innovation and quality in every project. I value teamwork, problem solving and continuous improvement, always looking to exceed expectations and deliver high impact results.
+        </p>
+        <p>
+            In addition, I consider myself an active, disciplined person, committed to my professional and academic growth. I am constantly learning, driven by the goal of leaving a positive footprint both in my projects and in my training as a developer.
+        </p>
+        <div class="flex-1 flex flex-col space-y-6 mt-8">
+          <h2 class="text-2xl font-bold mb-4 text-center md:text-left">My personal profile</h2>
+          <div class="grid grid-cols-3 gap-1 ">
+            <p class="">
+              🎂 22 years old
+            </p>
+            <p class="mb-2">
+              🎓 Software Development student
+            </p>
+            <p class="">
+              🖥️ Passionate about backend development with Python
+            </p>
+            <p class="">
+              🌐 Skilled in frontend technologies: React, Angular, TypeScript, Ionic
+            </p>
+            <p class="">
+              🛹 Skateboarding enthusiast in my free time
+            </p>
+            <p class="">
+              🚀 Always curious and learning new skills
+            </p>
+          </div>
+        </div>
+        
+        </div>
+    </div>
+    </section>
+    <style>
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+    </style>
+</body>
+</html>
+

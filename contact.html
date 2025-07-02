@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#163240] text-[#f7c9aa] font-sans">
+  <!-- Navbar -->
+  <nav class="bg-[var(--nav-bg)] border-b border-slate-600">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo / Brand -->
+      <div class="flex items-stretch  space-x-8">
+        <a href="index.html" class="text-lg font-medium border-r border-slate-600 px-8 flex">Andrés Rojas</a>
+        
+      </div>
+      <!-- Mode & Icons -->
+      <div class="flex items-center space-x-4">
+        <div class="flex space-x-6 items-center border-r px-8 border-slate-600 ">
+          <a href="index.html" class="hover:underline">Home</a>
+        </div>
+        <div class="flex space-x-6 items-center border-r px-8 border-slate-600 ">
+          <a href="about.html" class="hover:underline">About me</a>
+        </div>
+        <div class="flex space-x-6 items-center border-r px-8 border-slate-600 ">
+          <a href="curriculum.html" class="hover:underline">Curriculum vitae</a>
+        </div>
+        <div class="flex space-x-6 items-center border-r px-8 border-slate-600 ">
+          <a href="" class="underline">Contact & LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <section class="container mx-auto px-6 py-12">
+    <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+        <!-- Lado izquierdo: Imágenes de lenguajes de programación -->
+        
+
+        <!-- Lado derecho: Información personal -->
+        <div class="flex-1 text-center md:text-left p-8">
+        <h2 class="text-3xl font-bold mb-4">You can contact me by:</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Project Card -->
+            <div class="bg-[var(--nav-bg)] border border-slate-600 rounded-lg overflow-hidden">
+                <img src="images/gmail.jpg" alt="Project 1" class="w-full h-48 object-cover" />
+                <div class="p-4 text-center">
+                <a class="text-lg">Gmail: andressrojasr@gmail.com</a>
+                </div>
+            </div>
+            <div class="bg-[var(--nav-bg)] border border-slate-600 rounded-lg overflow-hidden">
+                <img src="images/outlook.jpg" alt="Project 2" class="w-full h-48 object-cover" />
+                <div class="p-4 text-center">
+                <a   class="text-lg">Institutional Email: aramirez7310@uta.edu.ec</a>
+                </div>
+            </div>
+            <div class="bg-[var(--nav-bg)] border border-slate-600 rounded-lg overflow-hidden">
+                <img src="images/linkedin.jpg" alt="Project 3" class="w-full h-48 object-cover" />
+                <div class="p-4 text-center">
+                <a  class="text-lg" href="https://www.linkedin.com/in/andrés-ramírez-rojas-844a63271">LinkedIn: Andrés Said Ramírez Rojas</a>
+                </div>
+            </div>
+            <div class="bg-[var(--nav-bg)] border border-slate-600 rounded-lg overflow-hidden">
+                <img src="images/github.png" alt="Project 3" class="w-full h-48 object-cover" />
+                <div class="p-4 text-center">
+                <a  class="text-lg" href="https://github.com/andressrojasr">GitHub: Andrés Rojas (andressrojasr)</a>
+                </div>
+            </div>
+        </div>
+        <p class="text-1xl mt-4">
+            Feel free to connect with me if you want to talk about tech and projects.
+        </p>
+    </div>
+    </section>
+    <section class=" text-center">
+        <div class="container mx-auto">
+        <h1 class="text-3xl pb-8 md:text-5xl font-bold">
+            "If your dreams don't scare you, then you're not dreaming big enough."
+        </h1>
+        </div>
+    </section>
+</body>
+</html>
+
